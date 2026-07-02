@@ -50,7 +50,7 @@ export default function Hero() {
           priority
           className="object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1412] via-[#0f1412]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0d0d14] via-[#0d0d14]/60 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-12 w-full">
@@ -66,7 +66,7 @@ export default function Hero() {
               className="font-display text-5xl sm:text-6xl lg:text-[64px] font-bold text-text-primary leading-[1.1] max-w-xl"
             >
               BUILDING CAREERS.<br />
-              <span className="text-[#80d8aa]">STRENGTHENING TEAMS.</span>
+              <span className="text-[#8fa3ff]">STRENGTHENING TEAMS.</span>
             </motion.h1>
             
             <motion.p
@@ -82,13 +82,13 @@ export default function Hero() {
             >
               <button
                 onClick={() => triggerFlow('employer')}
-                className="bg-[#80d8aa] text-[#003823] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#9bf5c5] transition-all flex items-center gap-2 cursor-pointer"
+                className="bg-[#8fa3ff] text-[#0c123d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#c7d2fe] transition-all flex items-center gap-2 cursor-pointer"
               >
                 Hire Talent <TrendingUp className="w-5 h-5" />
               </button>
               <button
                 onClick={() => triggerFlow('candidate')}
-                className="border border-[#80d8aa] text-[#80d8aa] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#80d8aa]/10 transition-all cursor-pointer"
+                className="border border-[#8fa3ff] text-[#8fa3ff] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#8fa3ff]/10 transition-all cursor-pointer"
               >
                 Submit Resume
               </button>
@@ -97,7 +97,7 @@ export default function Hero() {
           
           <div className="relative h-[500px] hidden md:block">
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-64 h-64 border border-[#80d8aa]/20 rounded-full animate-pulse" />
+              <div className="w-64 h-64 border border-[#8fa3ff]/20 rounded-full animate-pulse" />
             </div>
           </div>
         </motion.div>

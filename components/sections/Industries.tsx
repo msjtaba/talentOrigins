@@ -68,7 +68,7 @@ export default function Industries() {
                     <BorderGlow
                       edgeSensitivity={20}
                       borderRadius={8}
-                      backgroundColor="#111814"
+                      backgroundColor="#12121a"
                       className="p-6 border border-accent-muted/10 h-full flex flex-col items-center text-center justify-start hover:border-accent-primary/30 transition-all duration-300 hover:-translate-y-1 transform"
                     >
                       <div className="flex flex-col items-center gap-3 mb-2">
@@ -91,7 +91,7 @@ export default function Industries() {
 
           {/* Network Visualizer (5 cols on desktop) */}
           <div className="lg:col-span-5 w-full flex items-center justify-center relative">
-            <div className="absolute inset-0 bg-radial-gradient(circle, rgba(6,113,75,0.05) 0%, transparent 70%) pointer-events-none" />
+            <div className="absolute inset-0 bg-radial-gradient(circle, rgba(86,111,240,0.05) 0%, transparent 70%) pointer-events-none" />
             <div className="w-full max-w-[450px]">
               {renderNetworkVisualizer()}
             </div>

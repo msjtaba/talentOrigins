@@ -42,9 +42,9 @@ const DotField = memo(({
   glowRadius = 160,
   sparkle = false,
   waveAmplitude = 0,
-  gradientFrom = 'rgba(6, 113, 75, 0.35)',
-  gradientTo = 'rgba(46, 156, 114, 0.20)',
-  glowColor = '#0A0F0D',
+  gradientFrom = 'rgba(86, 111, 240, 0.35)',
+  gradientTo = 'rgba(123, 143, 247, 0.20)',
+  glowColor = '#0a0a0f',
   ...rest
 }: DotFieldProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);

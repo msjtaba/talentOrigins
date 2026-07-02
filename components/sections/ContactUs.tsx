@@ -193,7 +193,7 @@ export default function ContactUs() {
         {/* Section Header */}
         <div className="mb-20 text-center">
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-4 text-text-primary">
-            Connect with <span className="text-[#80d8aa]">Talent Origins</span>
+            Connect with <span className="text-[#8fa3ff]">Talent Origins</span>
           </h2>
           <p className="font-body text-lg text-text-muted">
             Partner with us to grow your career or team.
@@ -205,7 +205,7 @@ export default function ContactUs() {
           {/* Left Column: Contact Info */}
           <div className="space-y-8 font-body">
             <div className="space-y-4">
-              <h3 className="font-display text-2xl font-bold text-[#80d8aa]">
+              <h3 className="font-display text-2xl font-bold text-[#8fa3ff]">
                 Get in Touch
               </h3>
               <p className="text-text-muted text-base leading-relaxed">
@@ -215,7 +215,7 @@ export default function ContactUs() {
             
             <div className="space-y-6">
               <div className="flex gap-4 items-center">
-                <div className="p-3 rounded-full bg-[#06714b]/10 text-[#80d8aa] border border-[#06714b]/20">
+                <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
@@ -225,7 +225,7 @@ export default function ContactUs() {
               </div>
               
               <div className="flex gap-4 items-center">
-                <div className="p-3 rounded-full bg-[#06714b]/10 text-[#80d8aa] border border-[#06714b]/20">
+                <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
@@ -235,7 +235,7 @@ export default function ContactUs() {
               </div>
               
               <div className="flex gap-4 items-center">
-                <div className="p-3 rounded-full bg-[#06714b]/10 text-[#80d8aa] border border-[#06714b]/20">
+                <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
@@ -247,7 +247,7 @@ export default function ContactUs() {
               </div>
               
               <div className="flex gap-4 items-center">
-                <div className="p-3 rounded-full bg-[#06714b]/10 text-[#80d8aa] border border-[#06714b]/20">
+                <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
@@ -262,7 +262,7 @@ export default function ContactUs() {
           <BorderGlow
             edgeSensitivity={20}
             borderRadius={12}
-            backgroundColor="#111814"
+            backgroundColor="#12121a"
             className="w-full border border-accent-muted/20 overflow-hidden"
           >
             <div className="p-8 sm:p-10 min-h-[420px] flex flex-col justify-center">
@@ -278,9 +278,9 @@ export default function ContactUs() {
                     className="flex flex-col items-center justify-center flex-grow text-center"
                   >
                     <div className="mb-6 flex gap-2">
-                      <div className="w-2.5 h-2.5 rounded-full bg-[#80d8aa] animate-bounce delay-100" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-[#80d8aa] animate-bounce delay-200" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-[#80d8aa] animate-bounce delay-300" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#8fa3ff] animate-bounce delay-100" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#8fa3ff] animate-bounce delay-200" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#8fa3ff] animate-bounce delay-300" />
                     </div>
                     
                     <h3 className="font-display text-xl sm:text-2xl font-bold text-text-primary mb-8 max-w-md leading-relaxed">
@@ -290,13 +290,13 @@ export default function ContactUs() {
                     <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
                       <button
                         onClick={() => setFlowState('candidate')}
-                        className="px-6 py-3 bg-[#06714b] text-[#98f2c2] font-body font-bold rounded-lg hover:opacity-90 transition-all cursor-pointer text-sm sm:text-base"
+                        className="px-6 py-3 bg-[#566ff0] text-[#a5b4fc] font-body font-bold rounded-lg hover:opacity-90 transition-all cursor-pointer text-sm sm:text-base"
                       >
                         I am a Candidate
                       </button>
                       <button
                         onClick={() => setFlowState('employer')}
-                        className="px-6 py-3 border border-[#80d8aa] text-[#80d8aa] font-body font-bold rounded-lg hover:bg-[#80d8aa]/10 transition-all cursor-pointer text-sm sm:text-base"
+                        className="px-6 py-3 border border-[#8fa3ff] text-[#8fa3ff] font-body font-bold rounded-lg hover:bg-[#8fa3ff]/10 transition-all cursor-pointer text-sm sm:text-base"
                       >
                         I am an Employer
                       </button>
@@ -316,7 +316,7 @@ export default function ContactUs() {
                   >
                     <button
                       onClick={handleBackToPrompt}
-                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#80d8aa] hover:underline mb-6 cursor-pointer"
+                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#8fa3ff] hover:underline mb-6 cursor-pointer"
                     >
                       <ArrowLeft className="w-4 h-4" /> Back to selection
                     </button>
@@ -329,27 +329,27 @@ export default function ContactUs() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Company Name <span className="text-[#80d8aa]">*</span>
+                            Company Name <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="text"
                             required
                             value={companyName}
                             onChange={(e) => setCompanyName(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="Acme Corp"
                           />
                         </div>
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Contact Name <span className="text-[#80d8aa]">*</span>
+                            Contact Name <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="text"
                             required
                             value={contactName}
                             onChange={(e) => setContactName(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="John Doe"
                           />
                         </div>
@@ -358,27 +358,27 @@ export default function ContactUs() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Corporate Email <span className="text-[#80d8aa]">*</span>
+                            Corporate Email <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="email"
                             required
                             value={employerEmail}
                             onChange={(e) => setEmployerEmail(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="john@company.com"
                           />
                         </div>
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Target Job Title <span className="text-[#80d8aa]">*</span>
+                            Target Job Title <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="text"
                             required
                             value={jobTitle}
                             onChange={(e) => setJobTitle(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="e.g. Warehouse Manager"
                           />
                         </div>
@@ -386,14 +386,14 @@ export default function ContactUs() {
 
                       <div>
                         <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                          Requirements &amp; Job Description <span className="text-[#80d8aa]">*</span>
+                          Requirements &amp; Job Description <span className="text-[#8fa3ff]">*</span>
                         </label>
                         <textarea
                           required
                           rows={4}
                           value={jobDescription}
                           onChange={(e) => setJobDescription(e.target.value)}
-                          className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all resize-none"
+                          className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all resize-none"
                           placeholder="Briefly describe the candidate requirements, experience, and responsibilities..."
                         />
                       </div>
@@ -409,7 +409,7 @@ export default function ContactUs() {
                         <button
                           type="submit"
                           disabled={status === 'loading'}
-                          className="w-full sm:w-auto px-8 py-3 bg-[#06714b] text-[#98f2c2] font-body font-bold rounded-lg hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+                          className="w-full sm:w-auto px-8 py-3 bg-[#566ff0] text-[#a5b4fc] font-body font-bold rounded-lg hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
                         >
                           {status === 'loading' ? (
                             <>
@@ -436,7 +436,7 @@ export default function ContactUs() {
                   >
                     <button
                       onClick={handleBackToPrompt}
-                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#80d8aa] hover:underline mb-6 cursor-pointer"
+                      className="inline-flex items-center gap-2 text-xs font-semibold text-[#8fa3ff] hover:underline mb-6 cursor-pointer"
                     >
                       <ArrowLeft className="w-4 h-4" /> Back to selection
                     </button>
@@ -449,27 +449,27 @@ export default function ContactUs() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Full Name <span className="text-[#80d8aa]">*</span>
+                            Full Name <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="text"
                             required
                             value={fullName}
                             onChange={(e) => setFullName(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="Sarah Mitchell"
                           />
                         </div>
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Email Address <span className="text-[#80d8aa]">*</span>
+                            Email Address <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <input
                             type="email"
                             required
                             value={candidateEmail}
                             onChange={(e) => setCandidateEmail(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="sarah@example.com"
                           />
                         </div>
@@ -478,12 +478,12 @@ export default function ContactUs() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                            Job Type Preference <span className="text-[#80d8aa]">*</span>
+                            Job Type Preference <span className="text-[#8fa3ff]">*</span>
                           </label>
                           <select
                             value={jobTypePreference}
                             onChange={(e) => setJobTypePreference(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all appearance-none cursor-pointer"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all appearance-none cursor-pointer"
                           >
                             <option value="Full-time">Full-time</option>
                             <option value="Part-time">Part-time</option>
@@ -498,7 +498,7 @@ export default function ContactUs() {
                             type="url"
                             value={linkedinUrl}
                             onChange={(e) => setLinkedinUrl(e.target.value)}
-                            className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
+                            className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all"
                             placeholder="https://linkedin.com/in/username"
                           />
                         </div>
@@ -512,7 +512,7 @@ export default function ContactUs() {
                           rows={3}
                           value={coverNote}
                           onChange={(e) => setCoverNote(e.target.value)}
-                          className="w-full bg-[#111814] border border-[#0C3D2A] focus:border-[#06714B] focus:ring-1 focus:ring-[#06714B] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all resize-none"
+                          className="w-full bg-[#12121a] border border-[#2a3580] focus:border-[#566ff0] focus:ring-1 focus:ring-[#566ff0] text-text-primary rounded-md px-3.5 py-2.5 text-sm outline-none transition-all resize-none"
                           placeholder="Introduce yourself and tell us what kind of roles you are interested in..."
                         />
                       </div>
@@ -520,9 +520,9 @@ export default function ContactUs() {
                       {/* Resume Upload Box */}
                       <div>
                         <label className="block text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">
-                          Resume File <span className="text-[#80d8aa]">*</span> <span className="text-[10px] text-text-muted/50 font-normal">(PDF, DOC, DOCX up to 5MB)</span>
+                          Resume File <span className="text-[#8fa3ff]">*</span> <span className="text-[10px] text-text-muted/50 font-normal">(PDF, DOC, DOCX up to 5MB)</span>
                         </label>
-                        <div className="relative group border border-dashed border-[#0C3D2A] hover:border-[#06714B] bg-[#111814]/30 rounded-md p-6 flex flex-col items-center justify-center transition-all cursor-pointer">
+                        <div className="relative group border border-dashed border-[#2a3580] hover:border-[#566ff0] bg-[#12121a]/30 rounded-md p-6 flex flex-col items-center justify-center transition-all cursor-pointer">
                           <input
                             type="file"
                             required
@@ -530,7 +530,7 @@ export default function ContactUs() {
                             onChange={(e) => setResumeFile(e.target.files?.[0] || null)}
                             className="absolute inset-0 opacity-0 cursor-pointer"
                           />
-                          <Upload className="w-8 h-8 text-[#80d8aa] group-hover:text-[#9bf5c5] transition-colors mb-2" />
+                          <Upload className="w-8 h-8 text-[#8fa3ff] group-hover:text-[#c7d2fe] transition-colors mb-2" />
                           <span className="font-body text-xs text-text-primary font-semibold mb-1">
                             {resumeFile ? resumeFile.name : 'Upload your resume'}
                           </span>
@@ -551,7 +551,7 @@ export default function ContactUs() {
                         <button
                           type="submit"
                           disabled={status === 'loading'}
-                          className="w-full sm:w-auto px-8 py-3 bg-[#06714b] text-[#98f2c2] font-body font-bold rounded-lg hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+                          className="w-full sm:w-auto px-8 py-3 bg-[#566ff0] text-[#a5b4fc] font-body font-bold rounded-lg hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
                         >
                           {status === 'loading' ? (
                             <>
@@ -576,7 +576,7 @@ export default function ContactUs() {
                     exit="exit"
                     className="flex flex-col items-center justify-center flex-grow text-center animate-pulse"
                   >
-                    <CheckCircle2 className="w-14 h-14 text-[#80d8aa] mb-6" />
+                    <CheckCircle2 className="w-14 h-14 text-[#8fa3ff] mb-6" />
                     <h3 className="font-display text-2xl font-bold text-text-primary mb-3">
                       Thank You!
                     </h3>
@@ -585,7 +585,7 @@ export default function ContactUs() {
                     </p>
                     <button
                       onClick={handleBackToPrompt}
-                      className="px-6 py-2.5 border border-[#80d8aa] text-[#80d8aa] hover:bg-[#80d8aa]/10 font-body font-semibold rounded-md transition-colors text-xs cursor-pointer"
+                      className="px-6 py-2.5 border border-[#8fa3ff] text-[#8fa3ff] hover:bg-[#8fa3ff]/10 font-body font-semibold rounded-md transition-colors text-xs cursor-pointer"
                     >
                       Send another message
                     </button>

@@ -34,16 +34,16 @@ export default function NetworkStatic() {
       >
         <defs>
           <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#06714B" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#06714B" stopOpacity="0" />
+            <stop offset="0%" stopColor="#566ff0" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="#566ff0" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#2E9C72" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#2E9C72" stopOpacity="0" />
+            <stop offset="0%" stopColor="#7b8ff7" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#7b8ff7" stopOpacity="0" />
           </radialGradient>
           <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#06714B" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#2E9C72" stopOpacity="0.2" />
+            <stop offset="0%" stopColor="#566ff0" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#7b8ff7" stopOpacity="0.2" />
           </linearGradient>
         </defs>
 
@@ -106,14 +106,14 @@ export default function NetworkStatic() {
                 cx={node.x}
                 cy={node.y}
                 r="15"
-                fill="#111814"
-                stroke="#2E9C72"
+                fill="#12121a"
+                stroke="#7b8ff7"
                 strokeWidth="2"
               />
               <text
                 x={tx}
                 y={ty}
-                fill="#F0F5F2"
+                fill="#f0f0f5"
                 fontSize="11"
                 fontWeight="600"
                 textAnchor={textAnchor}
@@ -126,9 +126,9 @@ export default function NetworkStatic() {
         })}
 
         {/* Central Node - Talent Origins */}
-        <circle cx={cx} cy={cy} r="28" fill="#111814" stroke="#06714B" strokeWidth="3" />
-        <text x={cx} y={cy - 4} fill="#F0F5F2" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="var(--font-display)">TALENT</text>
-        <text x={cx} y={cy + 8} fill="#2E9C72" fontSize="10" fontWeight="700" textAnchor="middle" fontFamily="var(--font-display)">ORIGINS</text>
+        <circle cx={cx} cy={cy} r="28" fill="#12121a" stroke="#566ff0" strokeWidth="3" />
+        <text x={cx} y={cy - 4} fill="#f0f0f5" fontSize="11" fontWeight="700" textAnchor="middle" fontFamily="var(--font-display)">TALENT</text>
+        <text x={cx} y={cy + 8} fill="#7b8ff7" fontSize="10" fontWeight="700" textAnchor="middle" fontFamily="var(--font-display)">ORIGINS</text>
       </svg>
     </div>
   );

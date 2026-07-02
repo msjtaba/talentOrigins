@@ -35,15 +35,15 @@ export default function Testimonials() {
     <section id="testimonials" className="py-24 overflow-hidden relative z-10">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 mb-16">
         <h2 className="font-display text-4xl sm:text-5xl font-bold text-center text-text-primary">
-          Trusted by Leaders &amp; <span className="text-[#80d8aa]">Talent</span>
+          Trusted by Leaders &amp; <span className="text-[#8fa3ff]">Talent</span>
         </h2>
       </div>
 
       {/* Infinite Scroll Container */}
       <div className="relative w-full flex overflow-x-hidden py-4">
         {/* Left & Right gradient shading overlay for premium fade look */}
-        <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0f1412] to-transparent z-20 pointer-events-none" />
-        <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0f1412] to-transparent z-20 pointer-events-none" />
+        <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0d0d14] to-transparent z-20 pointer-events-none" />
+        <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0d0d14] to-transparent z-20 pointer-events-none" />
 
         {/* Scrolling Rail */}
         <div className="flex gap-6 w-max animate-infinite-scroll hover:[animation-play-state:paused] active:[animation-play-state:paused]">
@@ -55,12 +55,12 @@ export default function Testimonials() {
               <BorderGlow
                 edgeSensitivity={25}
                 borderRadius={12}
-                backgroundColor="#111814"
+                backgroundColor="#12121a"
                 className="p-8 border border-accent-muted/10 h-full flex flex-col justify-between space-y-4"
               >
                 <div className="space-y-4">
                   {/* Star Rating */}
-                  <div className="text-[#80d8aa] flex gap-1">
+                  <div className="text-[#8fa3ff] flex gap-1">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-current" />
                     ))}
@@ -70,10 +70,10 @@ export default function Testimonials() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-display text-base font-bold text-[#80d8aa]">
+                  <h4 className="font-display text-base font-bold text-[#8fa3ff]">
                     {item.name}
                   </h4>
-                  <span className="font-body text-xs text-[#88938b] uppercase tracking-wider">
+                  <span className="font-body text-xs text-[#8888aa] uppercase tracking-wider">
                     {item.role}
                   </span>
                 </div>

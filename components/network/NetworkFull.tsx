@@ -150,8 +150,8 @@ export default function NetworkFull() {
 
       // Draw Center Glow
       const centerGlow = ctx.createRadialGradient(cx, cy, 5, cx, cy, 75);
-      centerGlow.addColorStop(0, 'rgba(6, 113, 75, 0.35)');
-      centerGlow.addColorStop(1, 'rgba(6, 113, 75, 0)');
+      centerGlow.addColorStop(0, 'rgba(86, 111, 240, 0.35)');
+      centerGlow.addColorStop(1, 'rgba(86, 111, 240, 0)');
       ctx.fillStyle = centerGlow;
       ctx.beginPath();
       ctx.arc(cx, cy, 75, 0, Math.PI * 2);
@@ -184,15 +184,15 @@ export default function NetworkFull() {
         if (isAnyHovered) {
           strokeOpacity = isThisNodeHovered ? 0.7 : 0.1;
         }
-        ctx.strokeStyle = `rgba(6, 113, 75, ${strokeOpacity})`;
+        ctx.strokeStyle = `rgba(86, 111, 240, ${strokeOpacity})`;
         ctx.lineWidth = isThisNodeHovered ? 3 : 1.5;
         ctx.stroke();
 
         // Draw node-specific glows on hover
         if (isThisNodeHovered) {
           const nodeGlow = ctx.createRadialGradient(node.x, node.y, 2, node.x, node.y, 45);
-          nodeGlow.addColorStop(0, 'rgba(46, 156, 114, 0.45)');
-          nodeGlow.addColorStop(1, 'rgba(46, 156, 114, 0)');
+          nodeGlow.addColorStop(0, 'rgba(123, 143, 247, 0.45)');
+          nodeGlow.addColorStop(1, 'rgba(123, 143, 247, 0)');
           ctx.fillStyle = nodeGlow;
           ctx.beginPath();
           ctx.arc(node.x, node.y, 45, 0, Math.PI * 2);
@@ -231,7 +231,7 @@ export default function NetworkFull() {
           alpha = isThisNodeHovered ? 0.95 : 0.15;
         }
 
-        ctx.fillStyle = `rgba(46, 156, 114, ${alpha})`;
+        ctx.fillStyle = `rgba(123, 143, 247, ${alpha})`;
         ctx.beginPath();
         ctx.arc(px, py, p.size, 0, Math.PI * 2);
         ctx.fill();
@@ -251,8 +251,8 @@ export default function NetworkFull() {
         // Draw pulse particle
         const pulseGradient = ctx.createRadialGradient(px, py, 1, px, py, 12);
         pulseGradient.addColorStop(0, 'rgba(255, 255, 255, 0.9)');
-        pulseGradient.addColorStop(0.3, 'rgba(46, 156, 114, 0.8)');
-        pulseGradient.addColorStop(1, 'rgba(46, 156, 114, 0)');
+        pulseGradient.addColorStop(0.3, 'rgba(123, 143, 247, 0.8)');
+        pulseGradient.addColorStop(1, 'rgba(123, 143, 247, 0)');
 
         ctx.fillStyle = pulseGradient;
         ctx.beginPath();
@@ -267,8 +267,8 @@ export default function NetworkFull() {
         ctx.globalAlpha = node.opacity;
 
         // Node circle background
-        ctx.fillStyle = '#111814';
-        ctx.strokeStyle = hoveredNodeId === node.id ? '#2E9C72' : '#06714B';
+        ctx.fillStyle = '#12121a';
+        ctx.strokeStyle = hoveredNodeId === node.id ? '#7b8ff7' : '#566ff0';
         ctx.lineWidth = hoveredNodeId === node.id ? 2.5 : 1.5;
 
         ctx.beginPath();
@@ -277,13 +277,13 @@ export default function NetworkFull() {
         ctx.stroke();
 
         // Node Inner Dot
-        ctx.fillStyle = hoveredNodeId === node.id ? '#2E9C72' : '#0C3D2A';
+        ctx.fillStyle = hoveredNodeId === node.id ? '#7b8ff7' : '#2a3580';
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.r * 0.4, 0, Math.PI * 2);
         ctx.fill();
 
         // Text labels (Responsive adjustments)
-        ctx.fillStyle = hoveredNodeId === node.id ? '#F0F5F2' : '#88A89A';
+        ctx.fillStyle = hoveredNodeId === node.id ? '#f0f0f5' : '#8888aa';
         ctx.font = `600 12px var(--font-display, "Space Grotesk", sans-serif)`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -315,15 +315,15 @@ export default function NetworkFull() {
       ctx.globalAlpha = hubOpacity;
 
       // Draw outer rings
-      ctx.strokeStyle = 'rgba(6, 113, 75, 0.4)';
+      ctx.strokeStyle = 'rgba(86, 111, 240, 0.4)';
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.arc(cx, cy, hubRadius + 8 + Math.sin(time * 2.5) * 2, 0, Math.PI * 2);
       ctx.stroke();
 
       // Hub Fill
-      ctx.fillStyle = '#111814';
-      ctx.strokeStyle = '#06714B';
+      ctx.fillStyle = '#12121a';
+      ctx.strokeStyle = '#566ff0';
       ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.arc(cx, cy, hubRadius, 0, Math.PI * 2);
@@ -331,13 +331,13 @@ export default function NetworkFull() {
       ctx.stroke();
 
       // Text labels for Hub
-      ctx.fillStyle = '#F0F5F2';
+      ctx.fillStyle = '#f0f0f5';
       ctx.font = '700 11px var(--font-display, "Space Grotesk", sans-serif)';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText('TALENT', cx, cy - 6);
 
-      ctx.fillStyle = '#2E9C72';
+      ctx.fillStyle = '#7b8ff7';
       ctx.font = '700 9px var(--font-display, "Space Grotesk", sans-serif)';
       ctx.fillText('ORIGINS', cx, cy + 6);
 

@@ -82,7 +82,7 @@ export default function RecruitmentEngine() {
         {/* Title */}
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-4 text-text-primary">
-            The Difference Is in the <span className="text-[#80d8aa]">Process.</span>
+            The Difference Is in the <span className="text-[#8fa3ff]">Process.</span>
           </h2>
           <p className="text-text-muted font-body text-lg">
             Strategic Hiring Ecosystem
@@ -114,11 +114,11 @@ export default function RecruitmentEngine() {
                 {/* Central Timeline Dot */}
                 <div
                   className={`hidden md:block w-4 h-4 rounded-full relative z-20 transition-all duration-500 ${
-                    isActive ? 'bg-[#80d8aa]' : 'bg-[#0c3d2a]'
+                    isActive ? 'bg-[#8fa3ff]' : 'bg-[#2a3580]'
                   }`}
                 >
                   {isActive && (
-                    <div className="absolute inset-0 bg-[#80d8aa] animate-ping rounded-full opacity-50" />
+                    <div className="absolute inset-0 bg-[#8fa3ff] animate-ping rounded-full opacity-50" />
                   )}
                 </div>
 
@@ -147,11 +147,11 @@ function PipelineCard({ step, isActive }: PipelineCardProps) {
       glowRadius={32}
       glowIntensity={isActive ? 1.0 : 0.4}
       animated={isActive}
-      backgroundColor="#111814"
+      backgroundColor="#12121a"
       className={`p-10 border transition-all duration-500 h-full flex flex-col justify-center ${
         isActive
-          ? 'border-accent-primary/80 shadow-[0_0_15px_rgba(6,113,75,0.15)] translate-y-[-2px]'
-          : 'border-[#3f4942]/20 opacity-60'
+          ? 'border-accent-primary/80 shadow-[0_0_15px_rgba(86,111,240,0.15)] translate-y-[-2px]'
+          : 'border-[#3b3f54]/20 opacity-60'
       }`}
     >
       <div className="flex items-center justify-between mb-4">
@@ -159,7 +159,7 @@ function PipelineCard({ step, isActive }: PipelineCardProps) {
           {step.label}
         </span>
         {isActive && (
-          <span className="w-2 h-2 rounded-full bg-[#80d8aa] animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-[#8fa3ff] animate-pulse" />
         )}
       </div>
 
@@ -167,15 +167,15 @@ function PipelineCard({ step, isActive }: PipelineCardProps) {
         <div
           className={`w-12 h-12 rounded flex items-center justify-center transition-all ${
             isActive
-              ? 'bg-[#06714b] text-[#98f2c2]'
-              : 'bg-[#181d1a] text-[#88938b] border border-[#3f4942]/40'
+              ? 'bg-[#566ff0] text-[#a5b4fc]'
+              : 'bg-[#171821] text-[#8888aa] border border-[#3b3f54]/40'
           }`}
         >
           <Icon className="w-6 h-6" />
         </div>
         <h3
           className={`font-display text-2xl font-bold transition-all ${
-            isActive ? 'text-[#80d8aa]' : 'text-text-primary'
+            isActive ? 'text-[#8fa3ff]' : 'text-text-primary'
           }`}
         >
           {step.title}

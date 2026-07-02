@@ -37,11 +37,11 @@ function StatItem({ target, suffix, label, startCount }: StatItemProps) {
 
   return (
     <div className="space-y-2">
-      <div className="text-[#80d8aa] font-display text-4xl font-bold">
+      <div className="text-[#8fa3ff] font-display text-4xl font-bold">
         {count}
         <span>{suffix}</span>
       </div>
-      <div className="font-label-sm text-sm uppercase tracking-widest text-[#88938b]">
+      <div className="font-label-sm text-sm uppercase tracking-widest text-[#8888aa]">
         {label}
       </div>
     </div>
@@ -81,7 +81,7 @@ export default function TrustBar() {
   ];
 
   return (
-    <section ref={containerRef} className="py-12 bg-[#0a0f0d] border-y border-[#3f4942] relative overflow-hidden z-10">
+    <section ref={containerRef} className="py-12 bg-[#0a0a0f] border-y border-[#3b3f54] relative overflow-hidden z-10">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {stats.map((stat, idx) => (
           <StatItem

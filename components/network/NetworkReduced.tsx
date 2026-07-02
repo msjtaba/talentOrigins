@@ -130,8 +130,8 @@ export default function NetworkReduced() {
 
       // Draw Center Glow
       const centerGlow = ctx.createRadialGradient(cx, cy, 5, cx, cy, 65);
-      centerGlow.addColorStop(0, 'rgba(6, 113, 75, 0.25)');
-      centerGlow.addColorStop(1, 'rgba(6, 113, 75, 0)');
+      centerGlow.addColorStop(0, 'rgba(86, 111, 240, 0.25)');
+      centerGlow.addColorStop(1, 'rgba(86, 111, 240, 0)');
       ctx.fillStyle = centerGlow;
       ctx.beginPath();
       ctx.arc(cx, cy, 65, 0, Math.PI * 2);
@@ -162,15 +162,15 @@ export default function NetworkReduced() {
         if (isAnyActive) {
           strokeOpacity = isThisNodeActive ? 0.6 : 0.08;
         }
-        ctx.strokeStyle = `rgba(6, 113, 75, ${strokeOpacity})`;
+        ctx.strokeStyle = `rgba(86, 111, 240, ${strokeOpacity})`;
         ctx.lineWidth = isThisNodeActive ? 2.5 : 1.2;
         ctx.stroke();
 
         // Node specific tap glow
         if (isThisNodeActive) {
           const nodeGlow = ctx.createRadialGradient(node.x, node.y, 2, node.x, node.y, 35);
-          nodeGlow.addColorStop(0, 'rgba(46, 156, 114, 0.35)');
-          nodeGlow.addColorStop(1, 'rgba(46, 156, 114, 0)');
+          nodeGlow.addColorStop(0, 'rgba(123, 143, 247, 0.35)');
+          nodeGlow.addColorStop(1, 'rgba(123, 143, 247, 0)');
           ctx.fillStyle = nodeGlow;
           ctx.beginPath();
           ctx.arc(node.x, node.y, 35, 0, Math.PI * 2);
@@ -207,7 +207,7 @@ export default function NetworkReduced() {
           alpha = isThisNodeActive ? 0.9 : 0.12;
         }
 
-        ctx.fillStyle = `rgba(46, 156, 114, ${alpha})`;
+        ctx.fillStyle = `rgba(123, 143, 247, ${alpha})`;
         ctx.beginPath();
         ctx.arc(px, py, p.size, 0, Math.PI * 2);
         ctx.fill();
@@ -226,8 +226,8 @@ export default function NetworkReduced() {
 
         const pulseGradient = ctx.createRadialGradient(px, py, 1, px, py, 10);
         pulseGradient.addColorStop(0, 'rgba(255, 255, 255, 0.85)');
-        pulseGradient.addColorStop(0.3, 'rgba(46, 156, 114, 0.7)');
-        pulseGradient.addColorStop(1, 'rgba(46, 156, 114, 0)');
+        pulseGradient.addColorStop(0.3, 'rgba(123, 143, 247, 0.7)');
+        pulseGradient.addColorStop(1, 'rgba(123, 143, 247, 0)');
 
         ctx.fillStyle = pulseGradient;
         ctx.beginPath();
@@ -241,8 +241,8 @@ export default function NetworkReduced() {
         ctx.save();
         ctx.globalAlpha = node.opacity;
 
-        ctx.fillStyle = '#111814';
-        ctx.strokeStyle = currentActiveId === node.id ? '#2E9C72' : '#06714B';
+        ctx.fillStyle = '#12121a';
+        ctx.strokeStyle = currentActiveId === node.id ? '#7b8ff7' : '#566ff0';
         ctx.lineWidth = currentActiveId === node.id ? 2.2 : 1.2;
 
         ctx.beginPath();
@@ -251,13 +251,13 @@ export default function NetworkReduced() {
         ctx.stroke();
 
         // Node Inner Dot
-        ctx.fillStyle = currentActiveId === node.id ? '#2E9C72' : '#0C3D2A';
+        ctx.fillStyle = currentActiveId === node.id ? '#7b8ff7' : '#2a3580';
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.r * 0.4, 0, Math.PI * 2);
         ctx.fill();
 
         // Text labels
-        ctx.fillStyle = currentActiveId === node.id ? '#F0F5F2' : '#88A89A';
+        ctx.fillStyle = currentActiveId === node.id ? '#f0f0f5' : '#8888aa';
         ctx.font = `600 11px var(--font-display, "Space Grotesk", sans-serif)`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -283,15 +283,15 @@ export default function NetworkReduced() {
       ctx.save();
 
       // Outer ring
-      ctx.strokeStyle = 'rgba(6, 113, 75, 0.35)';
+      ctx.strokeStyle = 'rgba(86, 111, 240, 0.35)';
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.arc(cx, cy, hubRadius + 6 + Math.sin(time * 2.0) * 1.5, 0, Math.PI * 2);
       ctx.stroke();
 
       // Hub Fill
-      ctx.fillStyle = '#111814';
-      ctx.strokeStyle = '#06714B';
+      ctx.fillStyle = '#12121a';
+      ctx.strokeStyle = '#566ff0';
       ctx.lineWidth = 2.5;
       ctx.beginPath();
       ctx.arc(cx, cy, hubRadius, 0, Math.PI * 2);
@@ -299,13 +299,13 @@ export default function NetworkReduced() {
       ctx.stroke();
 
       // Text labels
-      ctx.fillStyle = '#F0F5F2';
+      ctx.fillStyle = '#f0f0f5';
       ctx.font = '700 10px var(--font-display, "Space Grotesk", sans-serif)';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText('TALENT', cx, cy - 5);
 
-      ctx.fillStyle = '#2E9C72';
+      ctx.fillStyle = '#7b8ff7';
       ctx.font = '700 8px var(--font-display, "Space Grotesk", sans-serif)';
       ctx.fillText('ORIGINS', cx, cy + 5);
 
