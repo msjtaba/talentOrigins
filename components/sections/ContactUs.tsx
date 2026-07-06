@@ -9,14 +9,14 @@ type FlowState = 'prompt' | 'candidate' | 'employer';
 
 export default function ContactUs() {
   const [flowState, setFlowState] = useState<FlowState>('prompt');
-  
+
   // Employer form state
   const [companyName, setCompanyName] = useState('');
   const [contactName, setContactName] = useState('');
   const [employerEmail, setEmployerEmail] = useState('');
   const [jobTitle, setJobTitle] = useState('');
   const [jobDescription, setJobDescription] = useState('');
-  
+
   // Candidate form state
   const [fullName, setFullName] = useState('');
   const [candidateEmail, setCandidateEmail] = useState('');
@@ -40,7 +40,7 @@ export default function ContactUs() {
       setFlowState(selectedFlow);
       setStatus('idle');
       setErrorMessage('');
-      
+
       // Scroll to contact section
       if (sectionRef.current) {
         sectionRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -63,7 +63,7 @@ export default function ContactUs() {
     setEmployerEmail('');
     setJobTitle('');
     setJobDescription('');
-    
+
     setFullName('');
     setCandidateEmail('');
     setJobTypePreference('Full-time');
@@ -212,7 +212,7 @@ export default function ContactUs() {
                 Whether you are looking to hire premium talent or searching for your next career move, we are here to support your goals.
               </p>
             </div>
-            
+
             <div className="space-y-6">
               <div className="flex gap-4 items-center">
                 <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
@@ -223,17 +223,17 @@ export default function ContactUs() {
                   <div className="text-text-muted text-sm">info@talentorigins.com</div>
                 </div>
               </div>
-              
+
               <div className="flex gap-4 items-center">
                 <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="font-bold text-text-primary text-base">Call Us</div>
-                  <div className="text-text-muted text-sm">+1 (555) 123-4567</div>
+                  <div className="text-text-muted text-sm">+1 (214) 836-5625</div>
                 </div>
               </div>
-              
+
               <div className="flex gap-4 items-center">
                 <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <MapPin className="w-6 h-6" />
@@ -241,11 +241,11 @@ export default function ContactUs() {
                 <div>
                   <div className="font-bold text-text-primary text-base">Visit Us</div>
                   <div className="text-text-muted text-sm leading-relaxed">
-                    100 Pine Street, Suite 1250<br />San Francisco, CA 94111
+                    30 N Gould St Ste R<br />Sheridan, WY 82801
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex gap-4 items-center">
                 <div className="p-3 rounded-full bg-[#566ff0]/10 text-[#8fa3ff] border border-[#566ff0]/20">
                   <Clock className="w-6 h-6" />
@@ -282,7 +282,7 @@ export default function ContactUs() {
                       <div className="w-2.5 h-2.5 rounded-full bg-[#8fa3ff] animate-bounce delay-200" />
                       <div className="w-2.5 h-2.5 rounded-full bg-[#8fa3ff] animate-bounce delay-300" />
                     </div>
-                    
+
                     <h3 className="font-display text-xl sm:text-2xl font-bold text-text-primary mb-8 max-w-md leading-relaxed">
                       Hello! Welcome to Talent Origins. Are you a Candidate or an Employer?
                     </h3>
